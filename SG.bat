@@ -1,0 +1,23 @@
+@echo off
+call C:\work\jinhong\jinhongenv\Scripts\activate.bat
+
+
+
+timeout /t 10
+
+(start python SGcapture.py) | pause
+
+
+(start python pdf_mail_process.py "SG")  | pause
+
+timeout /t 200
+
+
+(start python CNcapture.py) | pause
+
+
+(start python pdf_mail_process.py "CN")  | pause
+
+timeout /t 300
+
+call kill_ChromeD.bat
