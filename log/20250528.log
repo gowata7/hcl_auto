@@ -1,0 +1,12 @@
+[14:19:44.52] === 작업 시작 === 
+mapping info! {'172.28.7.8': 'FR2_Admin', '172.28.7.14': 'FR2_PRD-A', '172.28.7.20': 'FR2_PRD-B', '172.28.7.26': 'FR2_PRD-C', '172.28.7.32': 'FR2_PRD-D', '172.28.7.11': 'FR2_STG-A', '172.28.7.17': 'FR2_STG-B', '172.28.7.23': 'FR2_STG-C', '172.28.7.29': 'FR2_STG-D', '172.30.7.8': 'FR7_Admin', '172.30.7.14': 'FR7_PRD-A', '172.30.7.20': 'FR7_PRD-B', '172.30.7.26': 'FR7_PRD-C', '172.30.7.32': 'FR7_PRD-D', '172.30.7.11': 'FR7_STG-A', '172.30.7.17': 'FR7_STG-B', '172.30.7.23': 'FR7_STG-C', '172.30.7.29': 'FR7_STG-D'}
+This project is admin
+[INFO] VPN EU2-FR2 is already connected.
+Traceback (most recent call last):
+  File "C:\Beomjun\vm_lb_1.py", line 301, in <module>
+    ods_file_path = nova_extract(project_name, VPN_FR2_NAME)
+  File "C:\Beomjun\vm_lb_1.py", line 107, in nova_extract
+    print("ODS \ud30c\uc77c\uba85:", ods_file_path)
+  File "C:\Users\aeue0026\AppData\Local\Programs\Python\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 4-6: character maps to <undefined>

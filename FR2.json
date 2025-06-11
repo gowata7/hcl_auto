@@ -1,0 +1,2444 @@
+{
+    "zabbix_export": {
+        "version": "6.0",
+        "date": "2025-05-15T09:12:31Z",
+        "groups": [
+            {
+                "uuid": "eb82de9316444bdcade3a3b4ee78f3f1",
+                "name": "cloudInfra"
+            },
+            {
+                "uuid": "24068cc7facd432e9d433bbf899c7f3b",
+                "name": "compute"
+            },
+            {
+                "uuid": "f2481361f99448eea617b7b1d4765566",
+                "name": "Discovered hosts"
+            }
+        ],
+        "hosts": [
+            {
+                "host": "eu101-com03-evacuation-0201.eu-central-1.hcloud.h53",
+                "name": "eu101-com03-evacuation-0201.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.102",
+                        "dns": "eu101-com03-evacuation-0201.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.43",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com03-evacuation-0202.eu-central-1.hcloud.h53",
+                "name": "eu101-com03-evacuation-0202.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.134",
+                        "dns": "eu101-com03-evacuation-0202.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.63",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com03-evacuation-0203.eu-central-1.hcloud.h53",
+                "name": "eu101-com03-evacuation-0203.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.166",
+                        "dns": "eu101-com03-evacuation-0203.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.83",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com03-evacuation-0204.eu-central-1.hcloud.h53",
+                "name": "eu101-com03-evacuation-0204.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.198",
+                        "dns": "eu101-com03-evacuation-0204.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.103",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com03-evacuation-0305.eu-central-1.hcloud.h53",
+                "name": "eu101-com03-evacuation-0305.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.230",
+                        "dns": "eu101-com03-evacuation-0305.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.123",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com03-evacuation-0405.eu-central-1.hcloud.h53",
+                "name": "eu101-com03-evacuation-0405.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.20.6",
+                        "dns": "eu101-com03-evacuation-0405.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.143",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com04-0305.eu-central-1.hcloud.h53",
+                "name": "eu101-com04-0305.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.231",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.124",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com04-0405.eu-central-1.hcloud.h53",
+                "name": "eu101-com04-0405.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.20.7",
+                        "dns": "eu101-com04-0405.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.144",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com05-0201.eu-central-1.hcloud.h53",
+                "name": "eu101-com05-0201.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.104",
+                        "dns": "eu101-com05-0201.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.45",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com05-0202.eu-central-1.hcloud.h53",
+                "name": "eu101-com05-0202.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.136",
+                        "dns": "eu101-com05-0202.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.65",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com05-0203.eu-central-1.hcloud.h53",
+                "name": "eu101-com05-0203.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.168",
+                        "dns": "eu101-com05-0203.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.85",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com05-0204.eu-central-1.hcloud.h53",
+                "name": "eu101-com05-0204.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.200",
+                        "dns": "eu101-com05-0204.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.105",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com05-0305.eu-central-1.hcloud.h53",
+                "name": "eu101-com05-0305.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.232",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.125",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com05-0405.eu-central-1.hcloud.h53",
+                "name": "eu101-com05-0405.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.20.8",
+                        "dns": "eu101-com05-0405.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.145",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com06-0201.eu-central-1.hcloud.h53",
+                "name": "eu101-com06-0201.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.105",
+                        "dns": "eu101-com06-0201.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.46",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com06-0202.eu-central-1.hcloud.h53",
+                "name": "eu101-com06-0202.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.137",
+                        "dns": "eu101-com06-0202.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.66",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com06-0203.eu-central-1.hcloud.h53",
+                "name": "eu101-com06-0203.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.169",
+                        "dns": "eu101-com06-0203.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.86",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com06-0204.eu-central-1.hcloud.h53",
+                "name": "eu101-com06-0204.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.201",
+                        "dns": "eu101-com06-0204.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.106",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com06-0305.eu-central-1.hcloud.h53",
+                "name": "eu101-com06-0305.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.233",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.126",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com06-0405.eu-central-1.hcloud.h53",
+                "name": "eu101-com06-0405.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.20.9",
+                        "dns": "eu101-com06-0405.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.146",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com07-0201.eu-central-1.hcloud.h53",
+                "name": "eu101-com07-0201.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.106",
+                        "dns": "eu101-com07-0201.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.47",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com07-0202.eu-central-1.hcloud.h53",
+                "name": "eu101-com07-0202.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.138",
+                        "dns": "eu101-com07-0202.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.67",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com07-0203.eu-central-1.hcloud.h53",
+                "name": "eu101-com07-0203.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.170",
+                        "dns": "eu101-com07-0203.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.87",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com07-0204.eu-central-1.hcloud.h53",
+                "name": "eu101-com07-0204.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.202",
+                        "dns": "eu101-com07-0204.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.107",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com07-0305.eu-central-1.hcloud.h53",
+                "name": "eu101-com07-0305.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.234",
+                        "dns": "eu101-com07-0305.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.127",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com07-0405.eu-central-1.hcloud.h53",
+                "name": "eu101-com07-0405.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.20.10",
+                        "dns": "eu101-com07-0405.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.147",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com08-0201.eu-central-1.hcloud.h53",
+                "name": "eu101-com08-0201.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.107",
+                        "dns": "eu101-com08-0201.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.48",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com08-0202.eu-central-1.hcloud.h53",
+                "name": "eu101-com08-0202.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.139",
+                        "dns": "eu101-com08-0202.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.68",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com08-0203.eu-central-1.hcloud.h53",
+                "name": "eu101-com08-0203.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.171",
+                        "dns": "eu101-com08-0203.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.88",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com08-0204.eu-central-1.hcloud.h53",
+                "name": "eu101-com08-0204.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.203",
+                        "dns": "eu101-com08-0204.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.108",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com08-0305.eu-central-1.hcloud.h53",
+                "name": "eu101-com08-0305.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.235",
+                        "dns": "eu101-com08-0305.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.128",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com08-0405.eu-central-1.hcloud.h53",
+                "name": "eu101-com08-0405.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.20.11",
+                        "dns": "eu101-com08-0405.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.148",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com09-0201.eu-central-1.hcloud.h53",
+                "name": "eu101-com09-0201.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.108",
+                        "dns": "eu101-com09-0201.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.49",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com09-0202.eu-central-1.hcloud.h53",
+                "name": "eu101-com09-0202.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.140",
+                        "dns": "eu101-com09-0202.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.69",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com09-0203.eu-central-1.hcloud.h53",
+                "name": "eu101-com09-0203.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.172",
+                        "dns": "eu101-com09-0203.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.89",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com09-0204.eu-central-1.hcloud.h53",
+                "name": "eu101-com09-0204.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.204",
+                        "dns": "eu101-com09-0204.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.109",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com09-0305.eu-central-1.hcloud.h53",
+                "name": "eu101-com09-0305.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.236",
+                        "dns": "eu101-com09-0305.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.129",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com09-0405.eu-central-1.hcloud.h53",
+                "name": "eu101-com09-0405.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.20.12",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.149",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com10-0201.eu-central-1.hcloud.h53",
+                "name": "eu101-com10-0201.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.109",
+                        "dns": "eu101-com10-0201.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.50",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com10-0202.eu-central-1.hcloud.h53",
+                "name": "eu101-com10-0202.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.141",
+                        "dns": "eu101-com10-0202.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.70",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com10-0203.eu-central-1.hcloud.h53",
+                "name": "eu101-com10-0203.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.173",
+                        "dns": "eu101-com10-0203.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.90",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com10-0204.eu-central-1.hcloud.h53",
+                "name": "eu101-com10-0204.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.205",
+                        "dns": "eu101-com10-0204.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.110",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com11-0201.eu-central-1.hcloud.h53",
+                "name": "eu101-com11-0201.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.110",
+                        "dns": "eu101-com11-0201.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.51",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com11-0202.eu-central-1.hcloud.h53",
+                "name": "eu101-com11-0202.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.142",
+                        "dns": "eu101-com11-0202.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.71",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com11-0203.eu-central-1.hcloud.h53",
+                "name": "eu101-com11-0203.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.174",
+                        "dns": "eu101-com11-0203.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.91",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com11-0204.eu-central-1.hcloud.h53",
+                "name": "eu101-com11-0204.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.206",
+                        "dns": "eu101-com11-0204.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.111",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com12-0201.eu-central-1.hcloud.h53",
+                "name": "eu101-com12-0201.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.111",
+                        "dns": "eu101-com12-0201.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.52",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com12-0202.eu-central-1.hcloud.h53",
+                "name": "eu101-com12-0202.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.143",
+                        "dns": "eu101-com12-0202.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.72",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com12-0203.eu-central-1.hcloud.h53",
+                "name": "eu101-com12-0203.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.175",
+                        "dns": "eu101-com12-0203.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.92",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            },
+            {
+                "host": "eu101-com12-0204.eu-central-1.hcloud.h53",
+                "name": "eu101-com12-0204.eu-central-1.hcloud.h53",
+                "templates": [
+                    {
+                        "name": "Dell iDRAC by SNMP"
+                    },
+                    {
+                        "name": "Linux by Zabbix agent"
+                    },
+                    {
+                        "name": "neutron_dhcp_agent check"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "cloudInfra"
+                    },
+                    {
+                        "name": "compute"
+                    },
+                    {
+                        "name": "Discovered hosts"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "ip": "172.28.19.207",
+                        "dns": "eu101-com12-0204.eu-central-1.hcloud.h53",
+                        "interface_ref": "if1"
+                    },
+                    {
+                        "type": "SNMP",
+                        "ip": "172.28.9.112",
+                        "port": "161",
+                        "details": {
+                            "community": "{$SNMP_COMMUNITY}"
+                        },
+                        "interface_ref": "if2"
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$SNMP_COMMUNITY}",
+                        "value": "public"
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            }
+        ]
+    }
+}

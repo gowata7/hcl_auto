@@ -1,4 +1,5 @@
 from proxmoxer import ProxmoxAPI
+from datetime import datetime, timedelta
 import urllib3
 import pandas as pd
 import re
@@ -21,51 +22,61 @@ def format_uptime(seconds):
     hours = (seconds % 86400) // 3600
     return f"{days}d {hours}h"
 
-# 모든 서버 순회 처리
-for server in proxmox_servers:
-    proxmox = ProxmoxAPI(server['host'], user=server['user'], password=server['password'], verify_ssl=False)
+current_date = datetime.now().strftime("%Y%m%d")
 
-    cluster_resources = proxmox.cluster.resources.get(type='vm')
-    cluster_df = pd.DataFrame(cluster_resources)
+# Sheet 이름 변환 함수
+def format_sheet_name(hostname):
+    hostname = hostname.replace(':8006', '')
+    hostname = re.sub(r'eu-central-1\.hcloud\.io', 'FR2', hostname)
+    hostname = re.sub(r'eu-central-2\.hcloud\.io', 'FR7', hostname)
+    return hostname
 
-    vm_ip_list = []
+# Excel writer 생성
+with pd.ExcelWriter(f"C:\\Beomjun\\csv\\Proxmox\\proxmox_info_{current_date}.xlsx") as writer:
+    for server in proxmox_servers:
+        proxmox = ProxmoxAPI(server['host'], user=server['user'], password=server['password'], verify_ssl=False)
 
-    for node in proxmox.nodes.get():
-        node_name = node['node']
-        vms = proxmox.nodes(node_name).qemu.get()
+        cluster_resources = proxmox.cluster.resources.get(type='vm')
+        cluster_df = pd.DataFrame(cluster_resources)
 
-        for vm in vms:
-            vmid = vm['vmid']
-            config = proxmox.nodes(node_name).qemu(vmid).config.get()
-            ipconfig = config.get('ipconfig0', None)
+        vm_ip_list = []
 
-            ip = None
-            if ipconfig:
-                match = re.search(r'ip=([\d.]+)', ipconfig)
-                if match:
-                    ip = match.group(1)
+        for node in proxmox.nodes.get():
+            node_name = node['node']
+            vms = proxmox.nodes(node_name).qemu.get()
 
-            vm_ip_list.append({
-                'vmid': int(vmid),
-                'cloud_init_ip': ip
-            })
+            for vm in vms:
+                vmid = vm['vmid']
+                config = proxmox.nodes(node_name).qemu(vmid).config.get()
+                ipconfig = config.get('ipconfig0', None)
 
-    ip_df = pd.DataFrame(vm_ip_list)
+                ip = None
+                if ipconfig:
+                    match = re.search(r'ip=([\d.]+)', ipconfig)
+                    if match:
+                        ip = match.group(1)
 
-    merged_df = pd.merge(cluster_df, ip_df, on='vmid', how='left')
+                vm_ip_list.append({
+                    'vmid': int(vmid),
+                    'cloud_init_ip': ip
+                })
 
-    merged_df['cpu'] = (merged_df['cpu'] * 100).round(2)
-    merged_df['mem'] = (merged_df['mem'] / (1024**3)).round(2)
-    merged_df['maxmem'] = (merged_df['maxmem'] / (1024**3)).round(2)
-    merged_df['maxdisk'] = (merged_df['maxdisk'] / (1024**3)).round(2)
+        ip_df = pd.DataFrame(vm_ip_list)
 
-    merged_df['uptime'] = merged_df['uptime'].apply(format_uptime)
+        merged_df = pd.merge(cluster_df, ip_df, on='vmid', how='left')
 
-    final_df = merged_df[['vmid', 'name', 'node', 'status', 'cloud_init_ip', 
-                          'cpu', 'maxcpu', 'mem', 'maxmem', 'disk', 'maxdisk', 'uptime']]
+        merged_df['cpu'] = (merged_df['cpu'] * 100).round(2)
+        merged_df['mem'] = (merged_df['mem'] / (1024**3)).round(2)
+        merged_df['maxmem'] = (merged_df['maxmem'] / (1024**3)).round(2)
+        merged_df['maxdisk'] = (merged_df['maxdisk'] / (1024**3)).round(2)
 
-    # 각 서버별로 CSV 파일 출력
-    csv_filename = f"{server['host'].replace(':', '_')}_info.csv"
-    final_df.to_csv(csv_filename, index=False)
+        merged_df['uptime'] = merged_df['uptime'].apply(format_uptime)
 
-    print(f"Data from {server['host']} exported to {csv_filename}")
+        final_df = merged_df[['vmid', 'name', 'node', 'status', 'cloud_init_ip', 
+                              'cpu', 'maxcpu', 'mem', 'maxmem', 'disk', 'maxdisk', 'uptime']]
+
+        # 각 서버별로 Excel Sheet 출력
+        sheet_name = format_sheet_name(server['host'])
+        final_df.to_excel(writer, sheet_name=sheet_name, index=False)
+
+        print(f"Data from {server['host']} exported to sheet '{sheet_name}'")

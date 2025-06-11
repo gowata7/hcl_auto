@@ -12,6 +12,12 @@ from string import Template
 
 # 이미지 폴더 지정
 screenshots_path = 'ScreenShots'
+reports_path = 'Reports'
+vm_path = 'C:\\Beomjun\\csv\\VM'
+lb_path = 'C:\\Beomjun\\csv\\LB'
+proxmox_path = 'C:\\Beomjun\\csv\\Proxmox'
+volume_path = 'C:\\Beomjun\\csv\\Volume'
+total_report_path = 'C:\\Beomjun\\csv'
 
 # 이미지 폴더 존재 유무 체크 (필요 시 생성)
 isExist = os.path.exists(screenshots_path)
@@ -31,8 +37,8 @@ if not isExist:
     print("The new directory is created!")
 
 # 이메일 발신처
-MY_ADDRESS = '9458131@ict-companion.com'
-PASSWORD = 'Dlstod97@'
+MY_ADDRESS = '9403990@ict-companion.com'
+PASSWORD = 'Qjawns12@!'
 
 # 이메일 수신처
 def get_contacts(filename):
@@ -40,7 +46,6 @@ def get_contacts(filename):
     Return two lists names, emails containing names and email addresses
     read from a file specified by filename.
     """
-    
     names = []
     emails = []
     with open(filename, mode='r', encoding='utf-8') as contacts_file:
@@ -63,9 +68,8 @@ def read_template(filename):
 # 이메일 발신
 def send_email(region):
     Sent = False
-    
-    if region == "KR":
 
+    if region == "KR":
         while not Sent:
             try:    
                 names, emails = get_contacts('Mail/to_email.txt') # read contacts
@@ -140,16 +144,32 @@ def send_email(region):
                 names, emails = get_contacts('Mail/to_email.txt') # read contacts
                 message_template = read_template('Mail/mailcontent_other.txt')
 
+                filename_infra = glob.glob(os.path.join(reports_path, 'EU_Storage_in_detail_*.pdf'))[-1]
+                vm_infra = glob.glob(os.path.join(vm_path, 'vm_info_*.ods'))[-1]
+                lb_infra = glob.glob(os.path.join(lb_path, 'lb_info_*.ods'))[-1]
+                proxmox_infra = glob.glob(os.path.join(proxmox_path, 'proxmox_info_*.xlsx'))[-1]
+                volume_infra = glob.glob(os.path.join(volume_path, 'volume_info_*.ods'))[-1]
+                vm_report = glob.glob(os.path.join(total_report_path, 'total_report_*.docx'))[-1]
+
+                print("Last storage file is..", filename_infra)
+                print("Last vm file is..", vm_infra)
+                print("Last lb file is..", lb_infra)
+                print("Last proxmox file is..", proxmox_infra)
+                print("Last volume file is..", volume_infra)
+                print("Last vm_report file is..", vm_report)
+                
                 # set up the SMTP server
                 s = smtplib.SMTP(host='outlook.hyundai.net', port=25)  # 25 - smtp, 110 - pop3
                 s.starttls()
                 s.login(MY_ADDRESS, PASSWORD)
 
-                filename_infra = glob.glob(os.path.join(pdf_path, '%sInfra_in_detail*.pdf' %(region)))[-1]
-                
-
                 files = [
-                    filename_infra
+                    filename_infra,
+                    vm_infra,
+                    lb_infra,
+                    proxmox_infra,
+                    volume_infra,
+                    vm_report
                 ]     
 
                 # For each contact, send the email:
